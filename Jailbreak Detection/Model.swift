@@ -34,7 +34,7 @@ final class Device {
 		}
 	}
 
-	static var canOpenCydia: Bool {
+	func canOpenCydia() -> Bool {
 		let cydia: String = "cydia://"
 		guard let cydiaUrlScheme = URL(string: cydia) else { return false }
 		if UIApplication.shared.canOpenURL(cydiaUrlScheme) { return true }
@@ -42,7 +42,7 @@ final class Device {
 		return false
 	}
 
-	static var openCydiaApplication: Void {
+	func openCydiaApplication() -> Void {
 		let cydia: String = "cydia://"
 		guard let cydiaUrlScheme = URL(string: cydia) else { return }
 		UIApplication.shared.open(cydiaUrlScheme)

@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct MainScreenView: View {
+	let model = Device()
+
 	var body: some View {
 		Text(mainText).padding()
-		CydiaButtonView()
+		CydiaButtonView(model)
 	}
 }
 
