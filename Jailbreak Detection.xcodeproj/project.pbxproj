@@ -11,15 +11,20 @@
 		734D71B026C55CC5002B83B8 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734D71AF26C55CC5002B83B8 /* MainScreenView.swift */; };
 		734D71B226C55CCC002B83B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734D71B126C55CCC002B83B8 /* Assets.xcassets */; };
 		734D71B526C55CCC002B83B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 734D71B426C55CCC002B83B8 /* Preview Assets.xcassets */; };
+		73D5768726C590B900E52DB7 /* CydiaButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D5768626C590B900E52DB7 /* CydiaButtonView.swift */; };
+		73D5768926C5916A00E52DB7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D5768826C5916A00E52DB7 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		731EA79326C587B8008690CF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		734D71AA26C55CC5002B83B8 /* Jailbreak Detection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jailbreak Detection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		734D71AD26C55CC5002B83B8 /* Jailbreak_DetectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jailbreak_DetectionApp.swift; sourceTree = "<group>"; };
 		734D71AF26C55CC5002B83B8 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
 		734D71B126C55CCC002B83B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		734D71B426C55CCC002B83B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		734D71B626C55CCC002B83B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73D5768626C590B900E52DB7 /* CydiaButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CydiaButtonView.swift; sourceTree = "<group>"; };
+		73D5768826C5916A00E52DB7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,7 @@
 		734D71A126C55CC5002B83B8 = {
 			isa = PBXGroup;
 			children = (
+				731EA79326C587B8008690CF /* README.md */,
 				734D71AC26C55CC5002B83B8 /* Jailbreak Detection */,
 				734D71AB26C55CC5002B83B8 /* Products */,
 			);
@@ -54,6 +60,8 @@
 			children = (
 				734D71AD26C55CC5002B83B8 /* Jailbreak_DetectionApp.swift */,
 				734D71AF26C55CC5002B83B8 /* MainScreenView.swift */,
+				73D5768826C5916A00E52DB7 /* Model.swift */,
+				73D5768626C590B900E52DB7 /* CydiaButtonView.swift */,
 				734D71B126C55CCC002B83B8 /* Assets.xcassets */,
 				734D71B626C55CCC002B83B8 /* Info.plist */,
 				734D71B326C55CCC002B83B8 /* Preview Content */,
@@ -140,6 +148,8 @@
 			files = (
 				734D71B026C55CC5002B83B8 /* MainScreenView.swift in Sources */,
 				734D71AE26C55CC5002B83B8 /* Jailbreak_DetectionApp.swift in Sources */,
+				73D5768726C590B900E52DB7 /* CydiaButtonView.swift in Sources */,
+				73D5768926C5916A00E52DB7 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
