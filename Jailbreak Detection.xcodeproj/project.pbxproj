@@ -59,9 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				734D71AD26C55CC5002B83B8 /* Jailbreak_DetectionApp.swift */,
-				734D71AF26C55CC5002B83B8 /* MainScreenView.swift */,
+				73D35A9226C7C1E000A45860 /* Views */,
 				73D5768826C5916A00E52DB7 /* Model.swift */,
-				73D5768626C590B900E52DB7 /* CydiaButtonView.swift */,
 				734D71B126C55CCC002B83B8 /* Assets.xcassets */,
 				734D71B626C55CCC002B83B8 /* Info.plist */,
 				734D71B326C55CCC002B83B8 /* Preview Content */,
@@ -75,6 +74,15 @@
 				734D71B426C55CCC002B83B8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		73D35A9226C7C1E000A45860 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				734D71AF26C55CC5002B83B8 /* MainScreenView.swift */,
+				73D5768626C590B900E52DB7 /* CydiaButtonView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

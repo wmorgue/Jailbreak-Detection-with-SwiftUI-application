@@ -9,7 +9,9 @@ import SwiftUI
 
 @main
 struct Jailbreak_DetectionApp: App {
-    var body: some Scene {
-        WindowGroup { MainScreenView() }
-    }
+	let device = Device()
+
+	var body: some Scene {
+		WindowGroup { MainScreenView(model: device) }
+	}
 }

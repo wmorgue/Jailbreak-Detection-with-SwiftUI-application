@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MainScreenView: View {
-	let model = Device()
-
+	let model: Device
+	
 	var body: some View {
 		Text(mainText).padding()
 		CydiaButtonView(model)
@@ -17,10 +17,9 @@ struct MainScreenView: View {
 }
 
 
-
 extension MainScreenView {
 	private var mainText: String {
-		switch Device.isJailbroken() {
+		switch model.isJailbroken() {
 			case true: return "Device is Jailbroken"
 			case false: return "Not a Jailbroken"
 		}
@@ -28,9 +27,6 @@ extension MainScreenView {
 }
 
 
-
-
-
 struct ContentView_Previews: PreviewProvider {
-	static var previews: some View { MainScreenView() }
+	static var previews: some View { MainScreenView(model: Device()) }
 }

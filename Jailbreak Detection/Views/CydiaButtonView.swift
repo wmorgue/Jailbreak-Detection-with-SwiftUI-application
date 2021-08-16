@@ -10,7 +10,7 @@ import SwiftUI
 struct CydiaButtonView: View {
 	let model: Device
 	private let radius: CGFloat = 20
-
+	
 	var body: some View {
 		if model.canOpenCydia() {
 			Button(action: model.openCydiaApplication) {
@@ -27,7 +27,7 @@ struct CydiaButtonView: View {
 	internal init(_ model: Device) {
 		self.model = model
 	}
-
+	
 }
 
 struct CydiaButtonView_Previews: PreviewProvider {
