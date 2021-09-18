@@ -12,16 +12,13 @@ struct CydiaButtonView: View {
 	private let radius: CGFloat = 20
 	
 	var body: some View {
-		if model.canOpenCydia() {
-			Button(action: model.openCydiaApplication) {
-				Text("Open Cydia")
-				Image(systemName: "rectangle.on.rectangle")
-			}
-			.padding()
-			.background(Color.init(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
-			.clipShape(RoundedRectangle(cornerRadius: radius))
-			.foregroundColor(.primary)
+		Button(model.canOpenCydia() ? "Open Cydia" : "Can't open Cydia") {
+			model.openCydiaApplication()
 		}
+		.padding()
+		.background(Color.init(#colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)))
+		.clipShape(RoundedRectangle(cornerRadius: radius))
+		.foregroundColor(.primary)
 	}
 	
 	internal init(_ model: Device) {

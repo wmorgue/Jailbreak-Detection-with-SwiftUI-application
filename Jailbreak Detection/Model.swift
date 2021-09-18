@@ -9,6 +9,10 @@ import Foundation
 import class UIKit.UIApplication
 
 
+// More information at:
+// https://mobile-security.gitbook.io/mobile-security-testing-guide/ios-testing-guide/0x06j-testing-resiliency-against-reverse-engineering
+
+
 final class Device {
 	let bash: String = "/bin/bash"
 	let apt: String = "/usr/bin/apt"
@@ -17,9 +21,6 @@ final class Device {
 	let substrate: String = "/usr/lib/substrate/SubstrateBootstrap.dylib"
 	
 	func isJailbroken() -> Bool {
-		#if targetEnvironment(simulator)
-		return false
-		#endif
 		
 		let fm: FileManager = .default
 		
@@ -34,17 +35,15 @@ final class Device {
 		}
 	}
 	
-	func canOpenCydia() -> Bool {
-		let cydia: String = "cydia://"
-		guard let cydiaUrlScheme = URL(string: cydia) else { return false }
+	func canOpenCydia(_ input: String = "cydia://") -> Bool {
+		guard let cydiaUrlScheme = URL(string: input) else { return false }
 		if UIApplication.shared.canOpenURL(cydiaUrlScheme) { return true }
 		
 		return false
 	}
 	
-	func openCydiaApplication() -> Void {
-		let cydia: String = "cydia://"
-		guard let cydiaUrlScheme = URL(string: cydia) else { return }
+	func openCydiaApplication(_ input: String = "cydia://") -> Void {
+		guard let cydiaUrlScheme = URL(string: input) else { return }
 		UIApplication.shared.open(cydiaUrlScheme)
 	}
 }
